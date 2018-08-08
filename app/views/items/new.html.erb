@@ -1,0 +1,18 @@
+
+<div class="col-xs-offset-3 col-xs-6">
+	<h2>New Item</h2>
+
+	<%= form_for(@item) do |f| %>
+			<div class="field row">
+				<label for ="item_title">Title</label><br>
+				<%= f.text_field :title, class: "item_title col-xs-12" %>
+			</div>
+			<div class="field row">
+				<label for ="item_opinion">Price</label>
+				<%= f.text_field :price, class: "item_price col-xs-12" %>
+			</div>
+			<div class="action row">
+				<%= f.submit 'Create Item', :class =>"btn btn-primary col-xs-12" %>
+			</div>
+	<% end %>
+</div>
